@@ -1,0 +1,99 @@
+@font-face {
+    font-family:"gears";
+    src:url("fonts/GearsOfPeace.ttf")
+}
+
+*{
+    font-family: Geneva, Tahoma, Arial, serif;
+    color:white;
+}
+body{
+    background-image:url("images/fond_fusion.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+h1{
+    font-family:gears;
+    font-size: 5em;
+    padding-bottom: 60px;
+}
+
+h3{
+  font-family:gears;
+  font-size: 3em;
+}
+
+ul{
+    list-style-type:none;
+}
+
+#images{
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button {
+    width: 300px;
+    height: 60px;
+    font-family: 'gears', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #313133;
+    background-color: #7873f5;
+    background-image:linear-gradient(40deg, #ff6ec4, rgba(255,255,255,0));
+    border: ridge 3px black;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px black;
+    transition: transform 0.3s, background-color 1s ;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 30px;
+    padding-bottom: 50px;
+    }
+  
+  .button:hover, .button:focus {
+    background-color:#ff6ec4;
+    background-image:linear-gradient(40deg, #7873f5, rgba(255,255,255,0));
+    transform: scale(1.1);
+  }
+  
+#button_mid:hover, #button_mid:focus{
+  transform: none;
+}
+
+#valid{
+  position:relative;
+  margin-left: 80px;
+}
+
+#affichage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.images{
+  height:200px;
+  max-width:500px;
+  transition: all 0.3s ease;
+}
+
+.images:hover{
+  transform: scale(1.1);
+}
+
+input[type=number]{
+  border: 2px solid rgba(255,255,255,0);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+input[type=number]:hover, input[type=number]:focus{
+  border-color: rgb(135, 206, 235);
+
+}
